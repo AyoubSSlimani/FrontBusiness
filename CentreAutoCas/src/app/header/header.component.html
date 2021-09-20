@@ -1,0 +1,150 @@
+<body>
+  <div class="bg-blue">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h1>Centre’Auto’Ccas</h1>
+        </div>
+        <div class="icone col d-flex justify-content-end">
+          <div class="icone-nav d-flex justify-content-between">
+            <a href="#"
+              ><img
+                src="assets/images/facebook-logo.svg"
+                alt="user"
+                class="img-fluid"
+                alt="user"
+                width="20"
+                height="20"
+                class="img-fluid"
+            /></a>
+            <a href=""
+              ><img
+                src="assets/images/twitter.svg"
+                alt="search"
+                width="20"
+                height="20"
+                class="img-fluid"
+            /></a>
+            <a href=""
+              ><img
+                src="assets/images/instagram.svg"
+                alt="user"
+                width="20"
+                height="20"
+                class="img-fluid"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------CONNEXION------------------------>
+  <button type="button" *ngIf="canLogout()" (click)="logout()">
+    Logout
+  </button>
+
+  <a [routerLink]="['login']" *ngIf="!canLogout()">
+    Go to Login
+  </a>
+
+
+  <!--------------------MA NAVIGATION-------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Actualités</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Favoris</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="assets/images/user.svg"
+              alt="user"
+              width="30"
+              height="30"
+              class="img-fluid"
+            />
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">
+                    Espace professionnel
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <input
+                    class="form-control me-2 mb-3"
+                    type="search"
+                    placeholder="Adresse email"
+                    aria-label="search"
+                  />
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Mot de passe"
+                    aria-label="search"
+                  />
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Se connecter
+                  </button>
+                  <a class="user soulign" href="#">Mot de passe oublé</a>
+                  Vous n'avez pas de compte ?
+                  <a class="user soulign" href="#">Inscription</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+</body>

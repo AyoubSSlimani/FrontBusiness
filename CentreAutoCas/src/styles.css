@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.title {
+  color: dodgerblue;
+}
+
+.title2 {
+  font-size: 20px;
+  width: 230px;
+  text-align: justify;
+}
+
+.bg-blue {
+  background-color: dodgerblue;
+}
+
+.annonce {
+  padding-left: 20px;
+  padding-right: 0px;
+  width: 500px;
+}
+
+.camera {
+  padding-left: 5px;
+}
+
+.copyright {
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 50px;
+  color: dodgerblue;
+}
+
+.page p {
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+}
+
+.button0 {
+  width: 601px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modele {
+  background-color: grey;
+}
+
+.camera:before {
+  content: "3";
+  position: absolute;
+  top: 0;
+  left: -15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: #353b48;
+}
+
+.fond {
+  background-color: white;
+}
+
+.user {
+  text-decoration: black;
+  color: black;
+}
+
+li:hover {
+  color: green;
+  transition: 1s;
+  background-color: silver;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h6 {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+.icone-nav {
+  width: 100px;
+}
+
+.soulign {
+  text-decoration: underline;
+}
